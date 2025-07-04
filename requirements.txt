@@ -1,0 +1,16 @@
+# Dataset download & processing
+requests==2.31.0
+tqdm==4.66.1
+
+# General utilities
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+
+# Deep Learning
+tensorflow==2.15.0
+scikit-learn==1.4.1
+
+# Notebook support (optional but recommended)
+jupyter==1.0.0
+ipykernel==6.29.4

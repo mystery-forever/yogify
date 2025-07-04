@@ -82,3 +82,34 @@ Open and run the notebook:
 ```bash
 model.ipynb
 ```
+
+## 📊 Model Performance Metrics
+
+Below are the training and validation metrics for both the **Full Model** (trained on 82 poses) and the **Mini Model** (trained on 15 poses).
+
+---
+
+### 🧠 Full Model – `model.ipynb`
+
+| Metric                | Value     |
+|-----------------------|-----------|
+| ✅ Train Accuracy     | 71.67%    |
+| 📉 Train Loss         | 1.3309    |
+| 🧪 Validation Accuracy| 71.24%    |
+| 📉 Validation Loss    | 1.3109    |
+
+---
+
+### ⚡ Mini Model – `mini_model.ipynb`
+
+| Metric                | Value     |
+|-----------------------|-----------|
+| ✅ Train Accuracy     | 88.83%    |
+| 📉 Train Loss         | 0.7853    |
+| 🧪 Validation Accuracy| 90.43%    |
+| 📉 Validation Loss    | 0.7151    |
+
+---
+
+> ℹ️ The mini model achieved higher accuracy due to fewer classes and more separation between pose categories. The full model can be improved using augmentation, regularization, or advanced architectures (e.g., MobileNet, EfficientNet).
+

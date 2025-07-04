@@ -1,8 +1,17 @@
-# Yoga-82 Pose Classification
+# Yoga-82 Pose Classification with MediaPipe & Deep Learning
 
-This repository provides a complete pipeline to download, process, and train classification models on the **Yoga-82 dataset**. It includes utilities for building both a **mini dataset** (15 selected poses) and a **full dataset** (82 poses), along with corresponding TensorFlow models.
+This project provides a complete pipeline for building a yoga pose classification system using the **Yoga-82 dataset**, the **MediaPipe pose detection toolkit**, and **TensorFlow-based deep learning models**.
+
+We utilize **MediaPipe** for extracting body landmarks from yoga images and videos, which are then used as features for training pose classification models. The project supports both a full-scale model trained on all 82 yoga poses and a lightweight mini model trained on 15 selected poses.
 
 ---
+
+## 🔧 Built With
+
+- 🧠 TensorFlow – for training deep learning classification models  
+- 🧍 MediaPipe – for real-time human pose landmark detection and preprocessing  
+- 🗂️ Python – for dataset downloading, cleaning, and file handling  
+- 📊 Matplotlib & scikit-learn – for model evaluation and metrics
 
 ## 📁 Repository Structure
 Yoga-82/  

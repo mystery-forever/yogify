@@ -10,6 +10,7 @@ Yoga-82/
 │ ├── Bakasana.txt  
 │ ├── Tadasana.txt  
 │ └── ... (total 82 poses)  
+├── requirements.txt # Requirements for model  
 ├── script_dataset.py # Downloads and organizes the full Yoga-82 dataset  
 ├── script_mini_dataset.py # Filters out only 15 selected poses into a mini dataset  
 ├── mini_model.ipynb # TensorFlow model for 15-pose classification  
@@ -40,3 +41,16 @@ Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2.  Download the Dataset
+
+You can download and organize the Yoga-82 dataset using one of the following methods:
+
+---
+
+Use the `script_dataset.py` script to automatically download images from the URLs listed in `yoga_dataset_links/*.txt` files.
+
+```bash
+python script_dataset.py
+```

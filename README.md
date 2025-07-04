@@ -54,3 +54,31 @@ Use the `script_dataset.py` script to automatically download images from the URL
 ```bash
 python script_dataset.py
 ```
+
+### 3: Create a Mini Dataset (15 Poses)
+
+To work with a smaller subset of poses (e.g., for lightweight models or faster experimentation), run:
+
+```bash
+python script_mini_dataset.py
+```
+
+###  4: Train the Model
+
+You can now train classification models on the prepared dataset. Two options are available:
+
+---
+####  Option 1: Mini Model (15 Poses)
+
+Open and run the notebook:
+
+```bash
+mini_model.ipynb
+```
+####  Option 2: Full Model (82 Poses)
+
+Open and run the notebook:
+
+```bash
+model.ipynb
+```

@@ -6,14 +6,14 @@ We utilize **MediaPipe** for extracting body landmarks from yoga images and vide
 
 ---
 
-## 🔧 Built With
+## Built With
 
-- 🧠 TensorFlow – for training deep learning classification models  
-- 🧍 MediaPipe – for real-time human pose landmark detection and preprocessing  
-- 🗂️ Python – for dataset downloading, cleaning, and file handling  
-- 📊 Matplotlib & scikit-learn – for model evaluation and metrics
+- TensorFlow – for training deep learning classification models  
+- MediaPipe – for real-time human pose landmark detection and preprocessing  
+- Python – for dataset downloading, cleaning, and file handling  
+- Matplotlib & scikit-learn – for model evaluation and metrics
 
-## 📁 Repository Structure
+##  Repository Structure
 Yoga-82/  
 ├── yoga_dataset_links/ # Contains .txt files with URLs for each pose  
 │ ├── Bakasana.txt  
@@ -34,15 +34,15 @@ Yoga-82/
 
 | Component        | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
-| 📥 Data Download | Downloads images from provided URLs and organizes them into pose folders    |
-| 🧹 Data Cleanup  | Deduplicates images using content hash and handles missing/broken links     |
-| ✂️ Mini Dataset  | Retains only 15 essential yoga poses; others are moved to a separate folder |
-| 🤖 Mini Model    | Light classification model suitable for small-scale training                |
-| 🧠 Full Model    | Deep learning model trained on the complete Yoga-82 dataset                 |
+| Data Download | Downloads images from provided URLs and organizes them into pose folders    |
+| Data Cleanup  | Deduplicates images using content hash and handles missing/broken links     |
+| Mini Dataset  | Retains only 15 essential yoga poses; others are moved to a separate folder |
+| Mini Model    | Light classification model suitable for small-scale training                |
+| Full Model    | Deep learning model trained on the complete Yoga-82 dataset                 |
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install Required Libraries
 
@@ -92,33 +92,33 @@ Open and run the notebook:
 model.ipynb
 ```
 
-## 📊 Model Performance Metrics
+## Model Performance Metrics
 
 Below are the training and validation metrics for both the **Full Model** (trained on 82 poses) and the **Mini Model** (trained on 15 poses).
 
 ---
 
-### 🧠 Full Model – `model.ipynb`
+### Full Model – `model.ipynb`
 
 | Metric                | Value     |
 |-----------------------|-----------|
-| ✅ Train Accuracy     | 71.67%    |
-| 📉 Train Loss         | 1.3309    |
-| 🧪 Validation Accuracy| 71.24%    |
-| 📉 Validation Loss    | 1.3109    |
+| Train Accuracy     | 71.67%    |
+| Train Loss         | 1.3309    |
+| Validation Accuracy| 71.24%    |
+| Validation Loss    | 1.3109    |
 
 ---
 
-### ⚡ Mini Model – `mini_model.ipynb`
+### Mini Model – `mini_model.ipynb`
 
 | Metric                | Value     |
 |-----------------------|-----------|
-| ✅ Train Accuracy     | 88.83%    |
-| 📉 Train Loss         | 0.7853    |
-| 🧪 Validation Accuracy| 90.43%    |
-| 📉 Validation Loss    | 0.7151    |
+| Train Accuracy     | 88.83%    |
+| Train Loss         | 0.7853    |
+| Validation Accuracy| 90.43%    |
+| Validation Loss    | 0.7151    |
 
 ---
 
-> ℹ️ The mini model achieved higher accuracy due to fewer classes and more separation between pose categories. The full model can be improved using augmentation, regularization, or advanced architectures (e.g., MobileNet, EfficientNet).
+> The mini model achieved higher accuracy due to fewer classes and more separation between pose categories. The full model can be improved using augmentation, regularization, or advanced architectures (e.g., MobileNet, EfficientNet).
 
